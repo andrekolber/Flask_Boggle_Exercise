@@ -37,5 +37,5 @@ def post_score():
     session["nplays"] = nplays + 1
     session["highscore"] = max(score, highscore)
 
-    return jsonify(brokeRecord = score > highscore)
+    return jsonify(brokeRecord = score > highscore) 
 
